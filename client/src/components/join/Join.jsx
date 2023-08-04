@@ -17,9 +17,21 @@ export default function Join({setChatVisibility, setSocket}) {
 
   return (
     <div>
-      <h2>Nome de usuario</h2>
-      <input type="text" ref={usernameRef} placeholder='Nome de usuário' />
-      <button onClick={()=>handleSubmit()}>Entrar</button>
+      <div className='container'>
+        <div className='image'>
+            <div className='img'>
+              <img src='src\imagens\undraw_nature_on_screen_xkli.svg'/>
+            </div>
+          </div>
+        <h2>WORKCHAT</h2>
+          <div className='input'>
+             <h4>Digite seu nome de usuário:</h4>
+             <input type="text" ref={usernameRef} placeholder='Nome de usuário' />
+          </div>
+          <div className='button'>
+             <button onClick={()=>handleSubmit()}>Entrar</button>
+          </div>
+      </div>
     </div>
   )
 }
